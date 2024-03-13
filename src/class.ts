@@ -9,6 +9,7 @@ interface Person{
 }
 
 class Employee implements Person{
+    // every  attribute in the interface person must be present here 
     name:string;
     age: number;
     email?:string;
@@ -42,5 +43,6 @@ const e= new Employee("nishant",21,"")
 console.log(e);
 e.greet("hii");
 console.log(e.isLegal());
+
 
 
